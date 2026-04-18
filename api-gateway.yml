@@ -6,6 +6,9 @@ spring:
           uri: http://httpbin.org
           predicates:
             - Path=/test/**
+          filters:
+            - StripPrefix=1
+            
 management:
   endpoints:
     web:
