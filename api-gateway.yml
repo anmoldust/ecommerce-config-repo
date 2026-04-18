@@ -6,3 +6,9 @@ spring:
           uri: http://httpbin.org
           predicates:
             - Path=/test/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"            
