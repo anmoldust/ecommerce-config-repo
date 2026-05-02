@@ -11,8 +11,8 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=/api/v1/products/**
-          filters:
-            - name: JwtAuthenticationFilter
+          # filters:
+          #   - name: JwtAuthenticationFilter
 
 management:
   endpoints:
